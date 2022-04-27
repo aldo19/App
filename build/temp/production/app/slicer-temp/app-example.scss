@@ -1,5 +1,5 @@
 $app-name:  dynamic( 'app' );
-$image-search-path: '/var/www/html/app/build/production/app/resources';
+$image-search-path: '/var/www/html/App/build/production/app/resources';
 $theme-name:  dynamic( 'theme-triton' );
 $include-ext-abstractcomponent: dynamic(true);;
 $include-ext-abstractcontainer: dynamic(true);;
@@ -654,6 +654,36 @@ $include-ext-list-listview: dynamic(true);;
 $include-ext-list-roottreeitem: dynamic(true);;
 $include-ext-list-tree: dynamic(true);;
 $include-ext-list-treeitem: dynamic(true);;
+$include-ext-locale-es-component: dynamic(true);;
+$include-ext-locale-es-data-summary-count: dynamic(true);;
+$include-ext-locale-es-data-validator-presence: dynamic(true);;
+$include-ext-locale-es-form-checkboxgroup: dynamic(true);;
+$include-ext-locale-es-form-radiogroup: dynamic(true);;
+$include-ext-locale-es-form-field-base: dynamic(true);;
+$include-ext-locale-es-form-field-combobox: dynamic(true);;
+$include-ext-locale-es-form-field-date: dynamic(true);;
+$include-ext-locale-es-form-field-file: dynamic(true);;
+$include-ext-locale-es-form-field-htmleditor: dynamic(true);;
+$include-ext-locale-es-form-field-number: dynamic(true);;
+$include-ext-locale-es-form-field-text: dynamic(true);;
+$include-ext-locale-es-form-field-time: dynamic(true);;
+$include-ext-locale-es-form-field-vtypes: dynamic(true);;
+$include-ext-locale-es-grid-propertycolumnmodel: dynamic(true);;
+$include-ext-locale-es-grid-feature-advancedgrouping: dynamic(true);;
+$include-ext-locale-es-grid-feature-grouping: dynamic(true);;
+$include-ext-locale-es-grid-filters-filter-boolean: dynamic(true);;
+$include-ext-locale-es-grid-filters-filter-list: dynamic(true);;
+$include-ext-locale-es-grid-header-container: dynamic(true);;
+$include-ext-locale-es-grid-plugin-dragdrop: dynamic(true);;
+$include-ext-locale-es-grid-plugin-summaries: dynamic(true);;
+$include-ext-locale-es-grid-plugin-filterbar-operator: dynamic(true);;
+$include-ext-locale-es-grid-plugin-grouping-panel: dynamic(true);;
+$include-ext-locale-es-picker-date: dynamic(true);;
+$include-ext-locale-es-picker-month: dynamic(true);;
+$include-ext-locale-es-toolbar-paging: dynamic(true);;
+$include-ext-locale-es-view-abstractview: dynamic(true);;
+$include-ext-locale-es-view-view: dynamic(true);;
+$include-ext-locale-es-window-messagebox: dynamic(true);;
 $include-ext-menu-bar: dynamic(true);;
 $include-ext-menu-checkitem: dynamic(true);;
 $include-ext-menu-colorpicker: dynamic(true);;
@@ -981,11 +1011,25 @@ $include-app-application: dynamic(true);;
 $include-app-model-base: dynamic(true);;
 $include-app-model-personnel: dynamic(true);;
 $include-app-store-personnel: dynamic(true);;
+$include-app-view-core-clientes-gridclientes: dynamic(true);;
+$include-app-view-core-clientes-panelclientes: dynamic(true);;
+$include-app-view-core-clientes-tabpanelclientes: dynamic(true);;
+$include-app-view-core-clientes-form-formcliente: dynamic(true);;
 $include-app-view-core-login-windowlogin: dynamic(true);;
+$include-app-view-core-login-windowloginctr: dynamic(true);;
+$include-app-view-erp-tpv-ventas-gridventas: dynamic(true);;
+$include-app-view-erp-tpv-ventas-data-storeventas: dynamic(true);;
+$include-app-view-layout-maincontainer: dynamic(true);;
 $include-app-view-main-list: dynamic(true);;
 $include-app-view-main-main: dynamic(true);;
 $include-app-view-main-maincontroller: dynamic(true);;
 $include-app-view-main-mainmodel: dynamic(true);;
+$include-base-gridpanelbase: dynamic(true);;
+$include-base-modalwindow: dynamic(true);;
+$include-base-windowform: dynamic(true);;
+$include-base-grid-gridpanelbase: dynamic(true);;
+$include-base-window-modalwindow: dynamic(true);;
+$include-base-window-windowform: dynamic(true);;
 
 
 /* ======================== ETC ======================== */
@@ -1045,6 +1089,14 @@ $current-package: 'theme-triton';
 $current-resource-root: $theme-triton-resource-root;
 $relative-image-path-for-uis: $theme-triton-resource-path;
 @import '../../../../../ext/classic/theme-triton/sass/etc/all';
+
+/* including package base */
+$base-resource-root: 'base' !default;
+$base-resource-path: 'base/images' !default;
+$current-package: 'base';
+$current-resource-root: $base-resource-root;
+$relative-image-path-for-uis: $base-resource-path;
+@import '../../../../../packages/local/base/sass/etc/all';
 
 
 /* ======================== VAR ======================== */

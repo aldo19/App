@@ -2,6 +2,7 @@ Ext.define("app.view.layout.MainContainer", {
 	extend:"Ext.Panel",
 
 	layout: 'border',
+	requires: ['Ext.data.TreeStore'],
 
 	tbar:["->", "Yarely", {
 		text:"Cerrar Sesion"

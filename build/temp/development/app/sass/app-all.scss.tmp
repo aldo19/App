@@ -1019,6 +1019,7 @@ $include-app-view-core-clientes-form-formcliente: dynamic(true);;
 $include-app-view-core-login-windowlogin: dynamic(true);;
 $include-app-view-core-login-windowloginctr: dynamic(true);;
 $include-app-view-erp-tpv-ventas-gridventas: dynamic(true);;
+$include-app-view-erp-tpv-ventas-data-modelventa: dynamic(true);;
 $include-app-view-erp-tpv-ventas-data-storeventas: dynamic(true);;
 $include-app-view-layout-maincontainer: dynamic(true);;
 $include-app-view-main-list: dynamic(true);;

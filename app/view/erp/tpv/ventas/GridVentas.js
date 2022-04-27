@@ -4,6 +4,7 @@ Ext.define("app.view.erp.tpv.ventas.GridVentas",{
 	xtype:"gridventas",
 
 	storeName: "app.view.erp.tpv.ventas.data.StoreVentas",
+    requires:["Ext.grid.plugin.CellEditing"],
 
 	buildColumnas: function (){
 		return [{
@@ -11,6 +12,11 @@ Ext.define("app.view.erp.tpv.ventas.GridVentas",{
 			width:100,
 			dataIndex:"venta_k"
 		},{
+            dataIndex: "timestamp",
+            header:"Fecha",
+			width:100,
+
+        },{
 			text:"Cajero",
 			flex: 1,
 			dataIndex:"nameusuario"
