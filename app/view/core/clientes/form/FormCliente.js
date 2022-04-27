@@ -73,8 +73,11 @@ Ext.define("app.view.core.clientes.form.FormCliente",{
 
 		this.getForm().submit({
 			url: "server/clientes/guardar.json",
+			scope: this,
 			success: function (form, resp){
-				console.info("Formulario guardado", form, resp);
+				if( resp.result.success ){
+					this.fireEvent("datosguardados", this, resp.result);
+				}
 			}
 		});
 	}

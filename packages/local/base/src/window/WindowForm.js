@@ -12,7 +12,14 @@ Ext.define("base.window.WindowForm",{
 		console.info("@INITCOMPONENT@");
 
 		this.items = {
-			xtype: this.xtypeItem
+			xtype: this.xtypeItem,//formulario
+			listeners:{
+				scope: this,
+
+				datosguardados: function ( form, respuestaServidor){
+					this.fireEvent("datosguardadosventana", this, form, respuestaServidor);
+				}
+			}
 		};
 
 		this.buttons = [{

@@ -53,7 +53,6 @@ Ext.define("base.grid.GridPanelBase",{
 				xtype:"rownumberer"
 			});
 	    }
-
 	    if( this.enableEliminar ){
 			columnas.push({
 				xtype:'actioncolumn',
