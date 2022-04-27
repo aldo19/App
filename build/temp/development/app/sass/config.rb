@@ -1,1 +1,1 @@
-cache_path = '/var/www/html/app/build/.sass-cache'
+cache_path = '/var/www/html/App/build/.sass-cache'

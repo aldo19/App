@@ -1,5 +1,5 @@
 $app-name:  dynamic( 'app' );
-$image-search-path: '/var/www/html/app/build/development/app/resources';
+$image-search-path: '/var/www/html/App/build/development/app/resources';
 $theme-name:  dynamic( 'theme-triton' );
 $include-ext-abstractcomponent: dynamic(true);;
 $include-ext-abstractcontainer: dynamic(true);;
@@ -1018,6 +1018,8 @@ $include-app-view-core-clientes-tabpanelclientes: dynamic(true);;
 $include-app-view-core-clientes-form-formcliente: dynamic(true);;
 $include-app-view-core-login-windowlogin: dynamic(true);;
 $include-app-view-core-login-windowloginctr: dynamic(true);;
+$include-app-view-erp-tpv-ventas-gridventas: dynamic(true);;
+$include-app-view-erp-tpv-ventas-data-storeventas: dynamic(true);;
 $include-app-view-layout-maincontainer: dynamic(true);;
 $include-app-view-main-list: dynamic(true);;
 $include-app-view-main-main: dynamic(true);;

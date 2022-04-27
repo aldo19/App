@@ -30,7 +30,7 @@ console.info(" TERMINA la construccion --------");
 	}],
 
 	items:{
-		xtype:"gridclientes"
+		xtype:"gridventas"
 		//-- configuraciones
 	}
 });

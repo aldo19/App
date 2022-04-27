@@ -12,8 +12,17 @@ Ext.define("base.grid.GridPanelBase",{
 
 	enableEditar: true,
 
-
 	enablePaging: true,
+
+	autoLoad: true,
+
+ 	/**
+     * @cfg {String} [storeName]
+     * Define el nombre de la clase Store
+     * @autor joshua
+     * @fecha 27 de abril 2022
+     */
+	storeName:"Ext.data.Store",
 
 
 	plugins: {
@@ -22,6 +31,9 @@ Ext.define("base.grid.GridPanelBase",{
         }
     },
 
+	selModel: {
+	   selType: 'checkboxmodel'
+	},
 
     initComponent: function (){
     	this.store = this.buildStore();
@@ -66,8 +78,11 @@ Ext.define("base.grid.GridPanelBase",{
 	    };
     },
 
-    buildStore:  Ext.emptyFn,
+    buildStore:  function (){
+    	let store  = Ext.create( this.storeName );
 
+    	return store;
+    },
 
     buildColumnas: Ext.emptyFn
 });

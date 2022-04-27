@@ -1,2 +1,2 @@
 // @tag full-page
-// @require /var/www/html/app/app.js
+// @require /var/www/html/App/app.js
